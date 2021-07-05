@@ -1,15 +1,16 @@
 # OpenCV-real-time-face-detecion
-Using opencv to make a real time face detection
- 
- 
- 
-import cv2
+Using opencv with python to make a real time face detection :
 
-print("Package Imported")
-cap=cv2.VideoCapture(0)   # to use cam
 
-while cap.isOpened() :   # while loop to dedct faces
-    _, img = cap.read ()
+ 
+
+    import cv2
+
+    print("Package Imported")
+    cap=cv2.VideoCapture(0)   # to use cam
+
+    while cap.isOpened() :   # while loop to dedct faces
+        _, img = cap.read ()
 
     face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -22,4 +23,4 @@ while cap.isOpened() :   # while loop to dedct faces
     if cv2.waitKey(1)  &  0xFF == ord('q'):
         break
 
-cap.release()
+    cap.release()
