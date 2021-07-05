@@ -1,6 +1,7 @@
 # OpenCV-real-time-face-detecion
 Using opencv with python to make a real time face detection :
 
+Make sure you have cv2 and umpy packages .
 
  
 
