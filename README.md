@@ -11,7 +11,7 @@ download haarcascade_frontalface_default.xml .
     print("Package Imported")
     cap=cv2.VideoCapture(0)   # to use cam
 
-    while cap.isOpened() :   # while loop to dedct faces
+    while cap.isOpened() :   # while loop to detect faces
         _, img = cap.read ()
 
     face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
